@@ -1,0 +1,27 @@
+{
+  "sengpApp": {
+    "colis": {
+      "home": {
+        "title": "Colis",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Colis",
+        "createOrEditLabel": "Créer ou éditer un Colis",
+        "notFound": "Aucun Colis trouvé"
+      },
+      "created": "Un nouveau Colis a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Colis avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Colis avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Colis {{ id }} ?"
+      },
+      "detail": {
+        "title": "Colis"
+      },
+      "id": "ID",
+      "weight": "Weight",
+      "details": "Details",
+      "voyage": "Voyage",
+      "client": "Client"
+    }
+  }
+}

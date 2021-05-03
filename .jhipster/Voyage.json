@@ -1,0 +1,88 @@
+{
+  "name": "Voyage",
+  "fields": [
+    {
+      "fieldName": "depatureCountry",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "depatureAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "depatureCity",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "depatureDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "depatureTime",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "arrivalCountry",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "arrivalAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cityArrival",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateArrival",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "arrivalTime",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "kilos",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "unitPrice",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "valid",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "billet",
+      "otherEntityRelationshipName": "voyage",
+      "relationshipName": "billet",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "colis",
+      "otherEntityRelationshipName": "voyage",
+      "relationshipName": "colis"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "voyageur",
+      "otherEntityRelationshipName": "voyage",
+      "relationshipName": "voyageur"
+    }
+  ],
+  "entityTableName": "voyage",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210503151628"
+}

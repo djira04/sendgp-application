@@ -1,0 +1,42 @@
+{
+  "name": "Billet",
+  "fields": [
+    {
+      "fieldName": "label",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "url",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "website",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "voyage",
+      "otherEntityRelationshipName": "billet",
+      "relationshipName": "voyage",
+      "ownerSide": false
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "voyageur",
+      "otherEntityRelationshipName": "billet",
+      "relationshipName": "voyageur"
+    }
+  ],
+  "entityTableName": "billet",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210503151627"
+}

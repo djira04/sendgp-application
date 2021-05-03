@@ -12,6 +12,26 @@ import activate, { ActivateState } from 'app/modules/account/activate/activate.r
 import password, { PasswordState } from 'app/modules/account/password/password.reducer';
 import settings, { SettingsState } from 'app/modules/account/settings/settings.reducer';
 import passwordReset, { PasswordResetState } from 'app/modules/account/password-reset/password-reset.reducer';
+// prettier-ignore
+import voyageur, {
+  VoyageurState
+} from 'app/entities/voyageur/voyageur.reducer';
+// prettier-ignore
+import billet, {
+  BilletState
+} from 'app/entities/billet/billet.reducer';
+// prettier-ignore
+import voyage, {
+  VoyageState
+} from 'app/entities/voyage/voyage.reducer';
+// prettier-ignore
+import colis, {
+  ColisState
+} from 'app/entities/colis/colis.reducer';
+// prettier-ignore
+import client, {
+  ClientState
+} from 'app/entities/client/client.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 export interface IRootState {
@@ -25,6 +45,11 @@ export interface IRootState {
   readonly passwordReset: PasswordResetState;
   readonly password: PasswordState;
   readonly settings: SettingsState;
+  readonly voyageur: VoyageurState;
+  readonly billet: BilletState;
+  readonly voyage: VoyageState;
+  readonly colis: ColisState;
+  readonly client: ClientState;
   /* jhipster-needle-add-reducer-type - JHipster will add reducer type here */
   readonly loadingBar: any;
 }
@@ -40,6 +65,11 @@ const rootReducer = combineReducers<IRootState>({
   passwordReset,
   password,
   settings,
+  voyageur,
+  billet,
+  voyage,
+  colis,
+  client,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
   loadingBar,
 });

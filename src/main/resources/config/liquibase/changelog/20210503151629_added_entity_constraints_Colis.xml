@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+    <!--
+        Added the constraints for entity Colis.
+    -->
+    <changeSet id="20210503151629-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="voyage_id"
+                                 baseTableName="colis"
+                                 constraintName="fk_colis__voyage_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="voyage"/>
+
+        <addForeignKeyConstraint baseColumnNames="client_id"
+                                 baseTableName="colis"
+                                 constraintName="fk_colis__client_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="client"/>
+    </changeSet>
+</databaseChangeLog>
