@@ -1,0 +1,87 @@
+
+
+
+
+
+
+entity Voyageur {
+	firstname String,
+  	lastname String,
+	email String,
+    password String,
+	telephone Integer,
+    bornDate Instant,
+    cin String,
+	photo String
+}
+
+entity Billet {
+	label String,
+    url String,
+	website String
+}
+
+entity Voyage {
+	depatureCountry String,
+    depatureAddress String,
+	depatureCity String,
+    depatureDate Instant,
+    depatureTime Instant,
+    arrivalCountry String,
+    arrivalAddress String,
+	cityArrival String,
+	dateArrival Instant,
+    arrivalTime Instant,
+	kilos Integer,
+    unitPrice Float,
+	valid Boolean
+}
+
+entity Colis {
+	weight Float,
+	details String
+}
+
+entity Client {
+	firstname String,
+  	lastname String,
+	email String,
+    password String,
+	telephone Long,
+    bornDate Instant,
+    cin String,
+	photo String
+}
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	Voyageur to Billet{voyageur},
+    Voyageur to Voyage{voyageur},
+
+}
+// defining multiple OneToMany relationships with comments
+relationship OneToOne {
+    Voyage to Billet{voyage},
+
+}
+relationship OneToMany {
+    Voyage to Colis{voyage},
+
+}
+
+relationship OneToMany {
+    Client to Colis{client},
+
+}
+
+// Set pagination options
+paginate Voyageur, Voyage, Client, Billet, Colis with pagination
+
+// Use Data Transfer Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
