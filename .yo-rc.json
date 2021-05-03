@@ -42,7 +42,9 @@
     "jwtSecretKey": "MGM0ZDUyMTkyNWU5NmFkNzlhODU4Y2JhZWE0YzBiMWFhY2ZmMGZlMzdkYmI1MDViYjRkNWM3NmZmNWI0NmQ5Yjc0NWVlMjUzNDk1MTc2MWNmYTg0NzZmNTFkNmYzODg2NjZjZDliOWIyY2ZmODU0ZjQyMWQxN2NkMDRlYjU0ZjQ=",
     "clientTheme": "none",
     "clientThemeVariant": "",
-    "reactive": false
+    "reactive": false,
+    "entities": ["Voyageur", "Billet", "Voyage", "Colis", "Client"],
+    "lastLiquibaseTimestamp": 1620054990000
   },
   "git-provider": "GitHub",
   "git-company": "djira04",

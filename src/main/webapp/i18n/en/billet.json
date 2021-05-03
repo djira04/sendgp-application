@@ -1,0 +1,28 @@
+{
+  "sengpApp": {
+    "billet": {
+      "home": {
+        "title": "Billets",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Billet",
+        "createOrEditLabel": "Create or edit a Billet",
+        "notFound": "No Billets found"
+      },
+      "created": "A new Billet is created with identifier {{ param }}",
+      "updated": "A Billet is updated with identifier {{ param }}",
+      "deleted": "A Billet is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Billet {{ id }}?"
+      },
+      "detail": {
+        "title": "Billet"
+      },
+      "id": "ID",
+      "label": "Label",
+      "url": "Url",
+      "website": "Website",
+      "voyage": "Voyage",
+      "voyageur": "Voyageur"
+    }
+  }
+}

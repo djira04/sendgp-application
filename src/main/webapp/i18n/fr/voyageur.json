@@ -1,0 +1,33 @@
+{
+  "sengpApp": {
+    "voyageur": {
+      "home": {
+        "title": "Voyageurs",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Voyageur",
+        "createOrEditLabel": "Créer ou éditer un Voyageur",
+        "notFound": "Aucun Voyageur trouvé"
+      },
+      "created": "Un nouveau Voyageur a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Voyageur avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Voyageur avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Voyageur {{ id }} ?"
+      },
+      "detail": {
+        "title": "Voyageur"
+      },
+      "id": "ID",
+      "firstname": "Firstname",
+      "lastname": "Lastname",
+      "email": "Email",
+      "password": "Password",
+      "telephone": "Telephone",
+      "bornDate": "Born Date",
+      "cin": "Cin",
+      "photo": "Photo",
+      "billet": "Billet",
+      "voyage": "Voyage"
+    }
+  }
+}

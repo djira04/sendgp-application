@@ -48,6 +48,15 @@ public class CacheConfiguration {
             createCache(cm, com.sengpgroup.sengp.domain.User.class.getName());
             createCache(cm, com.sengpgroup.sengp.domain.Authority.class.getName());
             createCache(cm, com.sengpgroup.sengp.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.sengpgroup.sengp.domain.Voyageur.class.getName());
+            createCache(cm, com.sengpgroup.sengp.domain.Voyageur.class.getName() + ".billets");
+            createCache(cm, com.sengpgroup.sengp.domain.Voyageur.class.getName() + ".voyages");
+            createCache(cm, com.sengpgroup.sengp.domain.Billet.class.getName());
+            createCache(cm, com.sengpgroup.sengp.domain.Voyage.class.getName());
+            createCache(cm, com.sengpgroup.sengp.domain.Voyage.class.getName() + ".colis");
+            createCache(cm, com.sengpgroup.sengp.domain.Colis.class.getName());
+            createCache(cm, com.sengpgroup.sengp.domain.Client.class.getName());
+            createCache(cm, com.sengpgroup.sengp.domain.Client.class.getName() + ".colis");
             // jhipster-needle-ehcache-add-entry
         };
     }

@@ -1,0 +1,27 @@
+{
+  "sengpApp": {
+    "colis": {
+      "home": {
+        "title": "Colis",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Colis",
+        "createOrEditLabel": "Create or edit a Colis",
+        "notFound": "No Colis found"
+      },
+      "created": "A new Colis is created with identifier {{ param }}",
+      "updated": "A Colis is updated with identifier {{ param }}",
+      "deleted": "A Colis is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Colis {{ id }}?"
+      },
+      "detail": {
+        "title": "Colis"
+      },
+      "id": "ID",
+      "weight": "Weight",
+      "details": "Details",
+      "voyage": "Voyage",
+      "client": "Client"
+    }
+  }
+}
